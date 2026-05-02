@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeonBank Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <main class="app">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Personal Finance Dashboard</p>
+        <h1>NeonBank</h1>
+        <p class="subtext">A futuristic banking dashboard using fake transaction data.</p>
+      </div>
+
+      <div class="card glass">
+        <p>Current Balance</p>
+        <h2 id="balance">$0.00</h2>
+        <span>Available funds</span>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat glass">
+        <p>Total Income</p>
+        <h3 id="income">$0.00</h3>
+      </div>
+
+      <div class="stat glass">
+        <p>Total Expenses</p>
+        <h3 id="expenses">$0.00</h3>
+      </div>
+
+      <div class="stat glass">
+        <p>Transactions</p>
+        <h3 id="count">0</h3>
+      </div>
+    </section>
+
+    <section class="panel glass">
+      <div class="panel-header">
+        <h2>Recent Activity</h2>
+        <button onclick="shuffleTransactions()">Refresh Glow</button>
+      </div>
+
+      <div id="transactions" class="transactions"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
